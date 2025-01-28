@@ -20,9 +20,10 @@ The SMART-DS datasets (Synthetic Models for Advanced, Realistic Testing: Distrib
     - [Years](#years)
     - [Datasets](#datasets)
       - [Santa Fe](#santa-fe)
-      - [GSO](#gso)
-      - [SFO](#sfo)
-      - [AUS](#aus)
+      - [Greensboro](#greensboro)
+      - [San Francisco Bay Area](#san-francisco-bay-area)
+      - [Austin](#austin)
+      - [Texas](#texas)
     - [Sub-Regions](#sub-regions)
     - [Scenarios](#scenarios)
       - [Metrics](#metrics)
@@ -190,7 +191,7 @@ When viewing the shapefile information, the layers for each sub-region are:
 - Steiner Nodes (used by RNM)
 - Streets
 
-For example, GSO (with three sub-regions) contains three separate distribution transformer layers. These layers can be added or removed and augmented with base map layers such as sattelite or streetmap data. Meta-data included in the shapefile is included for grouping. The feeder layers are grouped by feeder. The Power line layers are grouped by phasing. Different color schemes can be used by selecting different columns in the layer properities for categorized layers, as shown below.
+For example, Greensboro (with three sub-regions) contains three separate distribution transformer layers. These layers can be added or removed and augmented with base map layers such as sattelite or streetmap data. Meta-data included in the shapefile is included for grouping. The feeder layers are grouped by feeder. The Power line layers are grouped by phasing. Different color schemes can be used by selecting different columns in the layer properities for categorized layers, as shown below.
 
 ![layer examples](figures/GIS/layer_examples.PNG)
 
@@ -307,14 +308,14 @@ The location of each region is shown below:
 ![SFO sub-regions (south)](figures/SFO/south_labels.PNG )
 ![SFO sub-regions (east)](figures/SFO/east_labels.PNG )
 
-#### AUS
+#### Austin
 
-The Austin dataset contains six sub-regions with the same naming convention as the SFO dataset. It contains five urban regions P1U-P5U and one rural regoin P1R. The Austin dataset also contains a small Powerworld transmission [model](https://ieeexplore.ieee.org/abstract/document/9216129), which can be used to co-simulate transmission and distribution models as described [here](https://ieeexplore.ieee.org/document/9384935).
+The Austin dataset contains six sub-regions with the same naming convention as the San Francisco Bay Area dataset. It contains five urban regions P1U-P5U and one rural regoin P1R. The Austin dataset also contains a small Powerworld transmission [model](https://ieeexplore.ieee.org/abstract/document/9216129), which can be used to co-simulate transmission and distribution models as described [here](https://ieeexplore.ieee.org/document/9384935).
 The Austin dataset includes a transmission system built by Texas A&M. The model can be downloaded [here](https://electricgrids.engr.tamu.edu/combined-td-synthetic-dataset/), and a copy is provided for convenience. 
 The location of each region is shown below:
 ![AUS sub-regions](figures/AUS/all_labels.PNG)
 
-#### TEXAS 
+#### Texas 
 
 The largest and most comprehensive dataset is a complete transmission and distribution model of Texas. The transmission system development is led by Texas A&M and can be downloaded [here](https://electricgrids.engr.tamu.edu/texas7k/). A copy is included within this dataset for convenience. 
 
@@ -590,7 +591,7 @@ Several files are included in the analysis folder:
 - **pu_voltages_histogram.png**: A figure showing a histogram of the per-unit voltages of non de-energized nodes in the network.
 - **pu_voltages_percentiles.png**: A figure showing the percentiles of the per-unit voltages of non de-energized nodes in the network.
 
-The voltage histogram and percengiles for the base_timeseries scenario of SFO region P5U in 2016 are shown below:
+The voltage histogram and percengiles for the base_timeseries scenario of San Francisco region P5U in 2016 are shown below:
 
 ![p5u_histogram](figures/analysis/pu_voltages_histogram.png)
 ![p5u_percentiles](figures/analysis/pu_voltages_percentiles.png)
@@ -672,7 +673,7 @@ In some of the high solar scenarios in larger networks, we have occasionally obs
 
 ### Using OpenDSS GUI
 
-To run powerflow using the OpenDSS GUI, ensure that the profiles folder is downloaded as well as all the opendss folder for the relevant scenarios. The opendss files reference the profiles, so maintaining the folder structure is important. Open the Master.dss for the sub-region/substation/feeder of interest and run by selecting all lines and pressing Ctl-D (i.e. DO selected lines). An example of the output for running the SFO region P27U is shown below, with monitor output of kVA and current asd well as the profile plot at the feeder head of p27uhs0_1247--p27udt387 in substation p27uhs0_1247.
+To run powerflow using the OpenDSS GUI, ensure that the profiles folder is downloaded as well as all the opendss folder for the relevant scenarios. The opendss files reference the profiles, so maintaining the folder structure is important. Open the Master.dss for the sub-region/substation/feeder of interest and run by selecting all lines and pressing Ctl-D (i.e. DO selected lines). An example of the output for running the San Francisco region P27U is shown below, with monitor output of kVA and current asd well as the profile plot at the feeder head of p27uhs0_1247--p27udt387 in substation p27uhs0_1247.
 
 ![dss_run](figures/OpenDSS/feeder.PNG)
 
@@ -690,8 +691,8 @@ import opendssdirect as dss
 import os
 import pandas as pd
 
-# File run from scenario folder of SFO P4U e.g.:
-# 2016/SFO/P4U/scenarios/solar_high_batteries_none/
+# File run from scenario folder of San Francisco P4U e.g.:
+# syn-sf_bay_area-D_only-v05/2016/P4U/scenarios/solar_high_batteries_none/
 
 substation = 'p4uhs0_4'
 feeder = 'p4uhs0_4--p4udt4'
