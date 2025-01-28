@@ -19,7 +19,7 @@ The SMART-DS datasets (Synthetic Models for Advanced, Realistic Testing: Distrib
     - [Placements](#placements)
     - [Years](#years)
     - [Datasets](#datasets)
-      - [SAF](#saf)
+      - [Santa Fe](#santa-fe)
       - [GSO](#gso)
       - [SFO](#sfo)
       - [AUS](#aus)
@@ -228,19 +228,20 @@ SMART-DS offers two types of case studies, peak planning scenarios and timeserie
 
 The SMART-DS datasets have been built in the geographic areas of:
 
-- Santa Fe, NM (SAF)
-- Greensboro, NC (GSO)
-- Extended San Francisco Bay Area, CA (SFO)
-- Austin, TX (AUS)
+- Santa Fe, NM 
+- Greensboro, NC 
+- Extended San Francisco Bay Area, CA 
+- Austin, TX 
+- Texas, USA
 
 A full respresentation of the distribution systems in the state of Texas is forthcoming as part of a synthetic integrated Transmission-Distribution model for the entire ERCOT footprint.
 
-#### SAF
+#### Santa Fe
 
 The Santa Fe dataset is the smallest SMART-DS dataset and contains only one sub-region for Santa Fe county in New Mexico. The SAF dataset has only been generated with peak loads and does not contain timeseries scenarios. The SAF dataset is shown below:
 ![SAF region](figures/SAF/all_labels.png)
 
-#### GSO
+#### Greensboro
 
 The Greensboro dataset contains three sub-regions:
 
@@ -253,7 +254,7 @@ The rural dataset is structured with rural network topologies while both the urb
 The relative locations of these sub-regions is shown below:
 ![GSO sub-regions](figures/GSO/all_labels.PNG )
 
-#### SFO
+#### San Francisco Bay Area 
 
 The extended San Francisco bay area model is the flagship SMART-DS dataset. It contains forty sub-regions which span both urban and rural geographies. The 35 urban sub-regions are named P1U to P35U, and the 5 rural sub-regions are named P1R to P5R. Table 1 describes the configurations used in each sub-region
 
