@@ -121,14 +121,13 @@ In the OEDI data repository, the SMART-DS is organized in a heirarchical manner.
 
 ```
 SMART-DS
-│
-└─── <GIS>
-│
-└─── <PLACEMENTS>
-│
-└─── <YEARS>
+└─── <DATASETS>
     │
-    └─── <DATASETS>
+    └─── <GIS>
+    │
+    └─── <PLACEMENTS>
+    │
+    └─── <YEARS>
          │
          └──── full_dataset_analysis
          │
@@ -163,11 +162,11 @@ SMART-DS
                      │                 └──── analysis
                      │
                      └──── opendss_no_loadshapes
-                           │
-                           └──── <SUBSTATIONS>
-                                 │
-                                 └──── <FEEDERS>
-
+                     │     │
+                     │     └─── <SUBSTATIONS>
+                     |           │
+                     |           └─── <FEEDERS>
+                     └──── <GEOJSON>
 ```
 
 Labels in angle brackets describe categories of folders, which are described in the following sections.
