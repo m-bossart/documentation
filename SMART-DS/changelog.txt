@@ -1,0 +1,12 @@
+Summary of changes for v1.1:
+- Addition of Santa Fe dataset (syn-santa_fe-D_only-v03)
+- Addition of Texas T&D dataset (syn-texas-TD_grid-v04). This dataset includes both transmission and distribution models. 
+- Addition of transmission model to the Austin dataset (syn-austin-TD_grid-v04)
+- Additional metric files (summary_metrics.csv) at the dataset level. The summary files are derived from the more detailed metrics for each sub-region (metrics.csv)
+- Directory re-structuring. Prior versions were organized at the top level by year (2016, 2017, 2018). v1.1 is organized at the top level by dataset (Santa Fe, Greensboro, Austin, San Francisco Bay Area, Texas)
+- Updated naming convention for datasets. The datasets in this version are:
+    - syn-santa_fe-D_only-v03 (new in this version)
+    - syn-greensboro-D_only-v05 (formerly GSO)
+    - syn-austin-TD_grid-v04 (formerly AUS)
+    - syn-sf_bay_area-D-only-v05 (formerly SFO)
+    - syn-texas-TD_grid-v04 (new in this version)
