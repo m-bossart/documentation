@@ -174,7 +174,7 @@ Labels in angle brackets describe categories of folders, which are described in 
 
 ### GIS
 
-For each dataset, shapefile information is provided with an acompanying .qgs file (SFO_QGIS.qgs, AUS_QGIS.qgs, GSO_QGIS.qgs or SAF_QGIS.qgs) to view the datasets using tools such as [QGIS](https://www.qgis.org/en/site/). The GIS information can assist with visualizing the datasets, but is produced from the raw RNM outputs. This means that it doesn't include any modifications made in post-processing, but does provide valuable information about electrical equipment locations. The .qgs project references layers that are provided for each sub-region of the dataset.
+For each dataset, shapefile information is provided in the GIS directory with an acompanying .qgs file (SFO_QGIS.qgs, AUS_QGIS.qgs, GSO_QGIS.qgs or SAF_QGIS.qgs) to view the datasets using tools such as [QGIS](https://www.qgis.org/en/site/). The GIS information can assist with visualizing the datasets, but is produced from the raw RNM outputs. This means that it doesn't include any modifications made in post-processing, but does provide valuable information about electrical equipment locations. The .qgs project references layers that are provided for each sub-region of the dataset.
 
 When viewing the shapefile information, the layers for each sub-region are:
 
@@ -198,6 +198,8 @@ For example, GSO (with three sub-regions) contains three separate distribution t
 If not all the shapefiles are available to the .qgs project file (e.g. if only a subset sub-regions were downloaded), Auto-find can be used to load the available layers as shown below.
 
 ![Missing layers](figures/GIS/missing_layers.png)
+
+Additional GIS data is available for individual scenarios within the GEOJSON directory. Unlike the files in GIS, these files include the impact of post-processing steps and therefore vary for individual scenarios. For example, battery and solar PV placements will vary depending on the scenario. 
 
 ### Placements
 
