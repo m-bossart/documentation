@@ -309,9 +309,17 @@ The location of each region is shown below:
 #### AUS
 
 The Austin dataset contains six sub-regions with the same naming convention as the SFO dataset. It contains five urban regions P1U-P5U and one rural regoin P1R. The Austin dataset also contains a small Powerworld transmission [model](https://ieeexplore.ieee.org/abstract/document/9216129), which can be used to co-simulate transmission and distribution models as described [here](https://ieeexplore.ieee.org/document/9384935).
+The Austin dataset includes a transmission system built by Texas A&M. The model can be downloaded [here](https://electricgrids.engr.tamu.edu/combined-td-synthetic-dataset/), and a copy is provided for convenience. 
 The location of each region is shown below:
 ![AUS sub-regions](figures/AUS/all_labels.PNG)
 
+#### TEXAS 
+
+The largest and most comprehensive dataset is a complete transmission and distribution model of Texas. The transmission system development is led by Texas A&M and can be downloaded [here](https://electricgrids.engr.tamu.edu/texas7k/). A copy is included within this dataset for convenience. 
+
+#TODO - insert documentation for full Texas system (including summary figures)
+
+Unlike the prior datasets which include both OpenDSS and CYME models, the Texas dataset includes only OpenDSS models.
 ### Sub-Regions
 
 The purpose of sub-regions is to provide a more tractible dataset size which can be downloaded and run in isolation, while still containing multiple substations under a single connected dataset. As described in [Locations](#Locations), each dataset contains multiple sub-regions with a 230kV source node named "st_mat" and a 69 kV subtransmission network connecting the sub-region's distribution substations. The sub-regions have diversity in wire configurations, voltage class, voltage management and urban/rural designs. Each sub-region contains the following files and folders (folders in bold):
